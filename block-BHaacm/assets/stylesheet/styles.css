@@ -1,0 +1,331 @@
+/* Custom Styles */
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(to bottom, #0000ff, #0000ff);
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a,
+.join-btn {
+  color: white;
+  text-decoration: none;
+}
+
+.join-btn {
+  background-color: red;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Section 1 */
+.section1 {
+  background-color: #e0f7fa;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.section1 h1 {
+  font-size: 2.5em;
+}
+
+.section1 p {
+  font-size: 1em;
+}
+
+.section1 .register-btn {
+  background-color: red;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.section1 img {
+  border-radius: 12px 0 0 12px;
+}
+
+/* Section 2 */
+.section2 {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.section2 img {
+  border-radius: 8px;
+}
+
+.section2 .know-more-btn {
+  background-color: red;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Section 3 */
+.section3 {
+  background-color: lightblue;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section3 .columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.section3 .column {
+  border: 1px dashed red;
+  padding: 20px;
+  width: 30%;
+}
+
+/* Section 4 */
+.section4 {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section4 .schedule {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.section4 .dates,
+.section4 .images,
+.section4 .descriptions {
+  width: 30%;
+}
+
+.section4 .date {
+  background-color: red;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  color: white;
+  font-weight: bold;
+}
+
+.section4 .date.dashed {
+  border: 2px dashed red;
+  background-color: transparent;
+  color: black;
+}
+
+.section4 .download-schedule-btn {
+  background-color: red;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Section 5 */
+.section5 {
+  background-color: lightblue;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section5 .stat {
+  text-align: center;
+}
+
+.section5 .stat.highlighted {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section5 .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Section 6 */
+.section6 {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section6 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section 7 */
+.section7 {
+  background-color: lightblue;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section7 .article {
+  width: 30%;
+  text-align: center;
+}
+
+.section7 .article a {
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-content .quick-links,
+footer .footer-content .social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    background-color: darkblue;
+    transition: 0.3s;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .nav-links li a {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+  }
+
+  .navbar.active .nav-links {
+    left: 0;
+  }
+
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6,
+  .section7 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section1 img,
+  .section2 img,
+  .section4 img,
+  .section7 img {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .section3 .columns,
+  .section7 {
+    flex-direction: column;
+  }
+
+  .section3 .column,
+  .section7 .article {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .section4 .schedule {
+    flex-direction: column;
+  }
+
+  .section4 .dates,
+  .section4 .images,
+  .section4 .descriptions {
+    width: 100%;
+  }
+}
